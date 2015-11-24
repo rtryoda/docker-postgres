@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "Hello World"
+service postgresql-9.4 initdb
+/usr/bin/supervisord -c /etc/supervisord.conf
+
